@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Belajar Gerakan Wudhu{% endblock %}
+
+{% block content %}
+<h2 class="text-2xl font-bold mb-6 text-center">Belajar Gerakan Wudhu</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+  <!-- Gerakan Wajah -->
+  <a href="{{ url_for('belajar_wajah') }}" class="block p-6 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+    <h3 class="text-lg font-semibold mb-2">1. Membasuh Wajah</h3>
+    <p>Pelajari gerakan membasuh wajah secara benar dan interaktif.</p>
+  </a>
+
+  <!-- Gerakan Tangan -->
+  <a href="{{ url_for('belajar_tangan') }}" class="block p-6 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+    <h3 class="text-lg font-semibold mb-2">2. Membasuh Tangan</h3>
+    <p>Pelajari gerakan membasuh kedua tangan dengan baik dan urut.</p>
+  </a>
+
+  <!-- Gerakan Kepala -->
+  <a href="{{ url_for('belajar_kepala') }}" class="block p-6 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+    <h3 class="text-lg font-semibold mb-2">3. Mengusap Kepala</h3>
+    <p>Gerakan mengusap kepala sesuai urutan yang benar.</p>
+  </a>
+
+  <!-- Gerakan Kaki -->
+  <a href="{{ url_for('belajar_kaki') }}" class="block p-6 bg-white rounded-xl shadow hover:bg-blue-50 transition">
+    <h3 class="text-lg font-semibold mb-2">4. Membasuh Kaki</h3>
+    <p>Langkah terakhir dalam wudhu, yaitu membasuh kedua kaki.</p>
+  </a>
+</div>
+{% endblock %}
